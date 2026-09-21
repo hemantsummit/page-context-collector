@@ -1,0 +1,43 @@
+{
+    "name": "page-context-collector",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Passive browser-side semantic page context collection",
+    "keywords": [
+        "dom",
+        "accessibility",
+        "semantic",
+        "browser-automation"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hemantsummit/page-context-collector.git"
+    },
+    "main": "./dist/lib/page-context-collector.js",
+    "types": "./dist/lib/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/lib/index.d.ts",
+            "import": "./dist/lib/page-context-collector.js",
+            "default": "./dist/lib/page-context-collector.js"
+        }
+    },
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "vite build && vite build --config vite.iife.config.js",
+        "test": "vitest run",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@microsoft/api-extractor": "^7.59.1",
+        "@types/node": "^26.4.1",
+        "happy-dom": "^20.13.2",
+        "typescript": "^6.0.3",
+        "unplugin-dts": "^1.0.3",
+        "vite": "^8.2.2",
+        "vitest": "^4.1.11"
+    }
+}
