@@ -7,9 +7,6 @@ with the page, and it includes visible static text.
 Extracted as a standalone package from
 [alibaba/page-agent](https://github.com/alibaba/page-agent).
 
-For a line-by-line explanation of the source, architecture, and configs, see
-[docs/CODE_WALKTHROUGH.md](docs/CODE_WALKTHROUGH.md).
-
 ## Install
 
 ```bash
